@@ -1,0 +1,33 @@
+<div class="container well">
+<div class='new_product'>
+<h4>Add a new product</h4>
+<form>
+<p>Name: <input type='text' class='form-control-sm' ng-model='product.name'></p>
+<p>Image (url): <input type='text' placeholder='http://www.image.com' ng-model='product.url'></p>
+<p>Description:</p> 
+<textarea ng-model='product.description' ></textarea></p>
+<p>Initial Quantity: <input type='text' ng-model='product.qty'></p>
+<button class='btn btn-success' ng-click='productctrl.create(product)'>Create Product</button>
+</form>	
+</div>
+<div class='show_products'>
+<ul>
+<li ng-repeat='product in productctrl.products'>
+<img src="{{product.url}}" width=100 height=100></img><br>
+
+<p class='products'>{{product.name}}</p>
+<p class='products'>{{product.qty}} left</p>
+</li>
+</ul>
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
