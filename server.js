@@ -20,6 +20,6 @@ require('./server/config/routes.js')(app);
 
 
 
-app.listen(8888, function() {
-	console.log('server is running on 8888');
+app.listen(8000, function() {
+	console.log('server is running on 8000');
 });
